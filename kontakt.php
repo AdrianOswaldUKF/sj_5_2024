@@ -40,6 +40,5 @@
   <?php
   include_once('partials/footer.php')
   ?>
-  <script src="js/menu.js"></script>
 </body>
 </html>

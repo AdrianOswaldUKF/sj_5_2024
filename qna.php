@@ -15,18 +15,14 @@
       </div>
     </section>
       <section class="container">
-      <div class="accordion">
-        <div class="question">Otázka 1</div>
-        <div class="answer">Odpoveď 1</div>
-      </div>
-      <div class="accordion">
-        <div class="question">Otázka 2</div>
-        <div class="answer">Odpoveď 2</div>
-      </div>
-      <div class="accordion">
-        <div class="question">Otázka 3</div>
-        <div class="answer">Odpoveď 3</div>
-      </div>
+        <?php
+          $qna = array('Otázka 1' => 'Odpoveď 1',
+                       'Otázka 2' => 'Odpoveď 2',
+                       'Otázka 3' => 'Odpoveď 3',
+                       'Otázka 4' => 'Odpoveď 4'
+        );
+        generate_qna($qna);
+        ?>
     </section>
     </section>
   </div>
@@ -34,7 +30,5 @@
   <?php
   include_once('partials/footer.php')
   ?>
-<script src="js/accordion.js"></script>
-<script src="js/menu.js"></script>
 </body>
 </html>
